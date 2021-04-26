@@ -1,0 +1,35 @@
+<%- include('header') -%>
+
+
+    <div class="container" style="width: 40%; margin-top: 2%; ">
+        <div class="row">
+            <div class="mb-3 col-12 text-center" >
+                <h3 style="font-weight: bold;"> Update Your Profile </h3>
+            </div>
+        <form class="row g-3" method="POST" action="/update/<%= users._id %>">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="inputEmail4" name="firstname" value="<%= users.firstname %>">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="inputPassword4" name="lastname" value="<%= users.lastname %>">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputAddress" name="email" value="<%= users.email %>">
+            </div>
+            <div class="col-12">
+              <label for="inputCity" class="form-label">Profession</label>
+              <input type="text" class="form-control" id="inputCity" name="profession" value="<%= users.profession %>">
+            </div>
+            
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+          </form>
+    </div>
+    
+
+
+<%- include('footer') -%>

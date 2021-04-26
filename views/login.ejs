@@ -1,0 +1,53 @@
+<%- include('header') -%>
+
+
+    <!-- <div class="container" style="width: 40%; margin-top: 2%; ">
+        <div class="row">
+            <div class="mb-3 col-12 text-center" >
+                <h3 style="font-weight: bold; margin-bottom: 10px;"> LogIn </h3>
+            </div>
+        <form class="row g-3" method="POST" action="login">
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputAddress" name="email">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputAddress2" name="password">
+            </div>
+            
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+          </form>
+    </div>
+     -->
+
+     <div class="container">
+      <form method="POST" action="login">
+        <div class="row text-center">
+          <div class="col-12">
+            <h2> LogIn</h2>
+          </div>
+        </div>
+        <hr />
+        <div class="row form-group justify-content-center">
+          <div class="col-12 col-md-4">
+            <label for="username"> Email </label>
+            <input class="form-control" type="username" name="email" id="username" required>
+          </div>
+        </div>
+        <div class="row form-group justify-content-center">
+          <div class="col-12 col-md-4">
+            <label for="password"> Password </label>
+            <input class="form-control" type="password" name="password" id="password" required/>
+          </div>
+        </div>
+        <div class="row form-group justify-content-center">
+          <div class="col-12 col-md-4">
+            <input type="submit" class="btn btn-primary btn-block" name="submit" value="Login">
+          </div>
+        </div>
+      </form>
+     </div>
+<%- include('footer') -%>
